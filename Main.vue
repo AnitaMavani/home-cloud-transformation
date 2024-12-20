@@ -6,7 +6,7 @@
       <span class="header-text">HOMECLOUD</span>
       
  
-      <!-- 独立的图标和其关联的 popover -->
+      <!-- popover -->
       <el-popover
         :width="800"
         trigger="click"
