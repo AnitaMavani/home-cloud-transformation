@@ -2,7 +2,7 @@
 
 A graduate capstone prototype for storing and managing files on local hardware, with the goal of repurposing idle computers as home storage servers.
 
-Built by a team of four, the application provides a browser-based interface for account registration, login, and file uploads. Its upload workflow splits files into smaller chunks, displays progress, and supports pausing and resuming transfers within the active application session.
+Built by a team of four, the application provides a browser-based interface for registering and signing in, uploading files, browsing stored content, sorting and filtering file listings, previewing supported files, and downloading them. Its upload workflow splits files into smaller chunks, displays progress, and supports pausing and resuming transfers within the active application session.
 
 **Status:** Academic prototype demonstrated locally. It is not a production-hosted service or a complete replacement for Google Drive.
 
@@ -19,6 +19,20 @@ The demonstrated application stores uploaded files on local disk. Repurposing id
 - Registration and login interfaces built with Vue.js.
 - Input validation and feedback for authentication flows.
 - Spring Boot endpoints supporting account registration and login.
+
+### File browsing and organization
+
+- Browse stored files and view their details in a file listing.
+- Sort file listings to change how stored content is displayed.
+- Filter listings to narrow the files shown.
+
+### File previews and downloads
+
+- Preview supported images, videos, audio, and documents through the application.
+- View file details before choosing which content to open or download.
+- Download stored files to the user's device.
+
+Preview availability depends on the file format and the application's supported viewers; this is not a claim that every format can be previewed.
 
 ### Chunked file uploads
 
@@ -44,6 +58,14 @@ The upload workflow was manually checked with different file types, including do
 | File storage | Local filesystem |
 
 The backend Maven configuration declares Spring Boot 2.6.1 and a Java 8 target. Use the dependency manifests as the reference for the versions in this repository.
+
+## Typical user workflow
+
+1. Register an account or sign in.
+2. Select a file to upload and track its progress, pausing or resuming when needed.
+3. Browse the stored-file listing and use sorting or filtering to locate content.
+4. View file details or open a supported preview.
+5. Download a stored file when needed.
 
 ## Upload workflow
 
